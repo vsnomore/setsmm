@@ -1,25 +1,33 @@
 .button {
-    display: block;
-    margin: 0 auto;
-    // margin-bottom: -1px;
-    padding: 12px 0;
-    width: 196px;
-    height: 50px;
-    border: none;
-    background: $gold-fusion;
-    border-radius: 41px;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 27px;
-    text-align: center;
-    color: $black;
+    padding: 9px 16px;
+    background-color: $main;
     text-decoration: none;
-    transition: .4s;
+    border: none;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: $gray1;
     cursor: pointer;
 
-    &:hover {
-        background: rgba($color: #000000, $alpha: 0);
-        border: 2px solid $gold-fusion;
-        color: $gold-fusion;
+    &_sign-in {
+        background-color: transparent;
+        border: 2px solid $main;
+    }
+
+    &_promo {
+        padding: 14px 0;
+        width: 100%;
+    }
+
+    &_order {
+        padding: 12px 0;
+        width: 100%;
+    }
+
+    &_prices {
+        margin: auto auto;
+        height: 40px;
     }
 }

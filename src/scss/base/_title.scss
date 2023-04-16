@@ -1,9 +1,11 @@
 .title {
-    padding-top: 72px;
-    font-family: 'Inter';
-    font-weight: 700;
-    font-size: 50px;
-    line-height: 61px;
-    text-align: center;
-    @include linear;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 44px;
+    color: $gray1;
+
+    &_promotion {
+        text-align: center;
+        color: $white;
+    }
 }

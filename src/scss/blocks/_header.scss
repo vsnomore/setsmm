@@ -1,0 +1,41 @@
+.hamburger {
+    display: none;
+}
+
+.header {
+    background-color: $gray4;
+    min-height: 88px;
+    display: flex;
+    align-items: center;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo {
+        width: 223px;
+    }
+
+    &__buttons {
+        display: flex;
+        gap: 16px;
+    }
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 64px;
+    padding: 0;
+    list-style-type: none;
+
+    &__link {
+        text-decoration: none;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+        color: $gray2;
+    }
+}

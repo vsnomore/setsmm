@@ -1,0 +1,27 @@
+.main-promo {
+    min-height: 480px;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__block {
+        display: flex;
+        flex-direction: column;
+        gap: 48px;
+
+        &-title {
+            width: 326px;
+            font-weight: 200;
+            font-size: 64px;
+            line-height: 84px;
+            color: $gray1;
+        }
+    }
+
+    &__plug {
+        width: 600px;
+    }
+}
