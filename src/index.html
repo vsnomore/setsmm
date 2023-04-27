@@ -18,7 +18,7 @@
     <header class="header">
         <div class="container">
             <div class="header__wrapper">
-                <a href="#" class="header__logo"><img src="./icons/logo.svg" alt="logo"></a>
+                <a href="index.html" class="header__logo"><img src="./icons/logo.svg" alt="logo"></a>
                 <nav>
                     <ul class="menu">
                         <li class="menu-item"><a href="#" class="menu__link">Быстрый заказ</a></li>
@@ -27,16 +27,16 @@
                     </ul>
                 </nav>
                 <div class="header__buttons">
-                    <a href="#" class="button button_sign-in">Вход</a>
-                    <a href="#" class="button">Регистрация</a>
+                    <a data-modal="sign-in" href="#" class="button button_sign-in">Вход</a>
+                    <a data-modal="sign-up" id="btn-registration" href="#" class="button">Регистрация</a>
                 </div>
             </div>
         </div>
     </header>
 
     <div class="hamburger">
-        <img src="./icons/logo.svg" alt="logo" class="hamburger__logo">
-        <div class="hamberger__icon">
+        <a href="index.html" class="hamburger__logo"><img src="./icons/logo.svg" alt="logo"></a>
+        <div class="hamburger__icon">
             <span></span>
             <span></span>
             <span></span>
@@ -48,9 +48,29 @@
             <div class="main-promo__wrapper">
                 <div class="main-promo__block">
                     <h1 class="main-promo__block-title">Более 400 услуг для соц сетей</h1>
-                    <a href="#" class="button button_promo">Регистрация</a>
+                    <a data-modal="sign-up" href="#" class="button button_promo">Регистрация</a>
                 </div>
-                <img src="./img/plug.png" alt="plug" class="main-promo__plug">
+                <!-- <img src="./img/plug.png" alt="plug" class="main-promo__plug"> -->
+                <div class="main-promo__grid">
+                    <div class="main-promo__grid-item">
+                        <img src="./icons/main-promo/column1.png" alt="social column" class="main-promo__grid-column">
+                    </div>
+                    <div class="main-promo__grid-item">
+                        <img src="./icons/main-promo/column2.png" alt="social column" class="main-promo__grid-column">
+                    </div>
+                    <div class="main-promo__grid-item">
+                        <img src="./icons/main-promo/column3.png" alt="social column" class="main-promo__grid-column">
+                    </div>
+                    <div class="main-promo__grid-item">
+                        <img src="./icons/main-promo/column4.png" alt="social column" class="main-promo__grid-column">
+                    </div>
+                    <div class="main-promo__grid-item">
+                        <img src="./icons/main-promo/column5.png" alt="social column" class="main-promo__grid-column">
+                    </div>
+                    <div class="main-promo__grid-item">
+                        <img src="./icons/main-promo/column6.png" alt="social column" class="main-promo__grid-column">
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -74,84 +94,84 @@
                 <h2 class="title">Быстрый заказ</h2>
                 <div class="order__wrapper">
                     <form class="order__form">
-                        <div class="order__form-category" id="select-category">
-                            <div class="order__form-category-label">Выбор социальной сети</div>
-                            <div class="order__form-category-header">
-                                <div class="order__form-category-current">
+                        <div class="order__form-select" id="select-category">
+                            <div class="order__form-select-label">Выбор социальной сети</div>
+                            <div class="order__form-select-header">
+                                <div class="order__form-select-current">
                                     <img src="./icons/social-transparent/instagram64.svg" alt="instagram"
-                                        class="order__form-category-icon">
+                                        class="order__form-select-icon">
                                     <span>Instagram</span>
                                 </div>
                             </div>
-                            <div class="order__form-category-body">
-                                <div class="order__form-category-item">
+                            <div class="order__form-select-body">
+                                <div class="order__form-select-item">
                                     <img src="./icons/social-transparent/instagram64.svg" alt="instagram"
-                                        class="order__form-category-icon">
+                                        class="order__form-select-icon">
                                     <span>Instagram</span>
                                 </div>
-                                <div class="order__form-category-item">
+                                <div class="order__form-select-item">
                                     <img src="./icons/social-transparent/telegram64.svg" alt="telegram"
-                                        class="order__form-category-icon">
+                                        class="order__form-select-icon">
                                     <span>Telegram</span>
                                 </div>
-                                <div class="order__form-category-item">
+                                <div class="order__form-select-item">
                                     <img src="./icons/social-transparent/tiktok64.svg" alt="tiktok"
-                                        class="order__form-category-icon">
+                                        class="order__form-select-icon">
                                     <span>TikTok</span>
                                 </div>
-                                <div class="order__form-category-item">
+                                <div class="order__form-select-item">
                                     <img src="./icons/social-transparent/youtube64.svg" alt="youtube"
-                                        class="order__form-category-icon">
+                                        class="order__form-select-icon">
                                     <span>YouTube</span>
                                 </div>
-                                <div class="order__form-category-item">
+                                <div class="order__form-select-item">
                                     <img src="./icons/social-transparent/twitch64.svg" alt="twitch"
-                                        class="order__form-category-icon">
+                                        class="order__form-select-icon">
                                     <span>Twitch</span>
                                 </div>
-                                <div class="order__form-category-item">
+                                <div class="order__form-select-item">
                                     <img src="./icons/social-transparent/vk64.svg" alt="vk"
-                                        class="order__form-category-icon">
+                                        class="order__form-select-icon">
                                     <span>VK</span>
                                 </div>
-                                <div class="order__form-category-item">
+                                <div class="order__form-select-item">
                                     <img src="./icons/social-transparent/instagram64.svg" alt="something"
-                                        class="order__form-category-icon">
+                                        class="order__form-select-icon">
                                     <span>Something</span>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="order__form-category" id="select-services">
-                            <div class="order__form-category-label">Выбор услуги</div>
-                            <div class="order__form-category-header">
-                                <div class="order__form-category-current">
+                        <div class="order__form-select" id="select-services">
+                            <div class="order__form-select-label">Выбор услуги</div>
+                            <div class="order__form-select-header">
+                                <div class="order__form-select-current">
                                     Лайки высокого качества
                                     <span class="select-services-info">(4₽ за 100шт)</span>
                                 </div>
                             </div>
-                            <div class="order__form-category-body">
-                                <div class="order__form-category-item">
+                            <div class="order__form-select-body">
+                                <div class="order__form-select-item">
                                     Лайки высокого качества <span class="select-services-info">(4₽ за 100шт)</span>
                                 </div>
-                                <div class="order__form-category-item">
+                                <div class="order__form-select-item">
                                     Лайки дешевые без гарантии <span class="select-services-info">(1₽ за 100шт)</span>
                                 </div>
-                                <div class="order__form-category-item">
+                                <div class="order__form-select-item">
                                     Подписчики с гарантией <span class="select-services-info">(5₽ за 100шт)</span>
                                 </div>
-                                <div class="order__form-category-item">
+                                <div class="order__form-select-item">
                                     Подписчики высокого качества СНГ <span class="select-services-info">(7₽ за
                                         100шт)</span>
                                 </div>
-                                <div class="order__form-category-item">
+                                <div class="order__form-select-item">
                                     Просмотры дешевые <span class="select-services-info">(0.7₽ за 100шт)</span>
                                 </div>
-                                <div class="order__form-category-item">
+                                <div class="order__form-select-item">
                                     Комментарии позитивные с гарантией <span class="select-services-info">(25₽ за
                                         100шт)</span>
                                 </div>
-                                <div class="order__form-category-item">
+                                <div class="order__form-select-item">
                                     Лайки высокого качества <span class="select-services-info">(4₽ за 100шт)</span>
                                 </div>
                             </div>
@@ -164,7 +184,7 @@
                         </label>
                         <label>
                             <span>Ссылка на выполнение заказа</span>
-                            <input class="order__form-link" name="link" id="link" value="https://" placeholder="https://www." type="text"
+                            <input class="order__form-link" name="link" id="link" placeholder="https://www." type="text"
                                 required>
                         </label>
                         <label>
@@ -234,7 +254,7 @@
                 <div class="prices__grid-descr">
                     Лайки, от 1₽ за 100шт
                 </div>
-                <a href="#" class="button button_prices">Получить услугу</a>
+                <a data-modal="consultation" href="#" class="button button_prices">Получить услугу</a>
 
                 <div class="prices__grid-social">
                     <img src="./icons/social-transparent/instagram64.svg" alt="instagram"
@@ -421,9 +441,9 @@
             <div class="footer__wrapper">
                 <a href="#" class="footer__logo"><img src="./icons/logo-white.svg" alt="logo"></a>
                 <ul class="footer__info">
-                    <li class="footer__info-item"><a href="#" class="footer__info-link">Политика конфиденциальности</a>
+                    <li class="footer__info-item"><a href="policy.html" class="footer__info-link">Политика конфиденциальности</a>
                     </li>
-                    <li class="footer__info-item"><a href="#" class="footer__info-link">Лицензионное соглашение</a></li>
+                    <li class="footer__info-item"><a href="agreement.html" class="footer__info-link">Лицензионное соглашение</a></li>
                 </ul>
                 <div class="footer__payment">
 
@@ -489,6 +509,67 @@
         </div>
     </footer>
 
+    <div class="overlay"></div>
+    <div class="modal" id="consultation">
+        <div class="modal__close"><span class="modal__close-icon">&times;</span></div>
+        <div class="modal__subtitle">Консультация маркетолога</div>
+        <div class="modal__descr">Получите пошаговый план развития ваших социальных сетей</div>
+
+        <form class="modal__form" action="#">
+            <label>
+                <span>Ваш e-mail для связи</span>
+                <input name="email" placeholder="E-mail" type="email" required>
+            </label>
+            <label>
+                <span>Телефон в Viber, Telegram или Whatsapp</span>
+                <input name="phone" placeholder="Номер телефона" type="tel" required>
+            </label>
+            <label>
+                <span>Логин в телеграм (если есть)</span>
+                <input name="username" placeholder="@username" type="text">
+            </label>
+            <button class="button button_modal">Получить консультацию</button>
+        </form>
+    </div>
+
+    <div class="modal" id="sign-up">
+        <div class="modal__close"><span class="modal__close-icon">&times;</span></div>
+        <div class="modal__subtitle">Регистарция</div>
+        <div class="modal__descr">Мгновенный доступ к скидкам и бонусам</div>
+
+        <form class="modal__form" action="#">
+            <label>
+                <span>Введите ваш E-mail</span>
+                <input name="email" placeholder="E-mail" type="email" required>
+            </label>
+            <label>
+                <span>Придумайте пароль</span>
+                <input name="password" placeholder="Пароль" type="password" required>
+            </label>
+            <label>
+                <span>Повторите введенный пароль</span>
+                <input name="password" placeholder="Повтор пароля" type="password" required>
+            </label>
+            <button class="button button_modal">Регистарция</button>
+        </form>
+    </div>
+
+    <div class="modal" id="sign-in">
+        <div class="modal__close"><span class="modal__close-icon">&times;</span></div>
+        <div class="modal__subtitle">Вход</div>
+
+        <form class="modal__form" action="#">
+            <label>
+                <span>Введите ваш E-mail</span>
+                <input name="email" placeholder="E-mail" type="email" required>
+            </label>
+            <label>
+                <span>Введите ваш пароль</span>
+                <input name="password" placeholder="Пароль" type="password" required>
+            </label>
+            <button class="button button_modal">Вход</button>
+        </form>
+    </div>
 
     <script src="js/main.js"></script>
 </body>

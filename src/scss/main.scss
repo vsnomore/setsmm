@@ -2,7 +2,7 @@
 @import './base/mixins';
 @import './base/title';
 @import './base/buttons';
-// @import './base/animations';
+@import './base/animations';
 
 * {
     font-family: 'Inter', sans-serif;
@@ -37,6 +37,7 @@ body {
     margin: 0 auto;
 }
 
+@import "blocks/modals";
 @import "blocks/header";
 @import "blocks/main-promo";
 @import "blocks/promotion";
